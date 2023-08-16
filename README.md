@@ -2,7 +2,7 @@
 This repo contains the official implementation for Local Spherical Harmonics Improve Skeleton-Based Hand Action Recognition. The paper is accepted to DAGM / GCPR 2023.
 
 ## Main Idea
-![image](LSH_Vis.pdf)
+![LSH_Vis](https://github.com/KathPra/LSHR_LSHT/blob/main/LSH_Vis.pdf)
 
 # Prerequisites
 We use the same prerequisites as CTR-GCN
@@ -17,7 +17,7 @@ Further dependencies:
 
 ### Training
 
-- Select the config file depending on what you which dataset and modality you are interested in.
+- Select the config file depending on which dataset and modality you are interested in.
 - Select the model that you are interested in running. You can create your own model files under `./model`.
 
 ```
@@ -35,19 +35,17 @@ python main.py --config <work_dir>/config.yaml --work-dir <work_dir> --phase tes
 
 - To ensemble the results of different modalities, run 
 ```
-# Example: ensemble four modalities of CTRGCN on NTU RGB+D 120 cross subject
-python ensemble.py --datasets ntu120/xsub --joint-dir work_dir/ntu120/csub/ctrgcn --bone-dir work_dir/ntu120/csub/ctrgcn_bone --joint-motion-dir work_dir/ntu120/csub/ctrgcn_motion --bone-motion-dir work_dir/ntu120/csub/ctrgcn_bone_motion
+python ensemble.py --datasets ntu120/xsub --joint-dir work_dir/ntu120/csub/LSHT_4 --bone-dir work_dir/ntu120/csub/LSHT_4_bone --joint-motion-dir work_dir/ntu120/csub/LSHT_4_vel --bone-motion-dir work_dir/ntu120/csub/LSHT_4_bone_vel
 ```
 
 - To calculate hand accuracy, run 
 ```
-# Example: ensemble four modalities of CTRGCN on NTU RGB+D 120 cross subject
 python hand_action_acc.py --datasets ntu120/xsub --acc-dir work_dir/ntu120/csub/LSHT_4 --best_ep 64
 ```
 
 ## Acknowledgements
 
-This repo is based on [CTR-GCN]([https://github.com/lshiwjx/2s-AGCN](https://github.com/Uason-Chen/CTR-GCN)). The data processing is borrowed from [SGN](https://github.com/microsoft/SGN) and [HCN](https://github.com/huguyuehuhu/HCN-pytorch).
+This repo is based on [CTR-GCN](https://github.com/Uason-Chen/CTR-GCN). The data processing is borrowed from [SGN](https://github.com/microsoft/SGN) and [HCN](https://github.com/huguyuehuhu/HCN-pytorch).
 
 Thanks to the original authors for their work!
 
