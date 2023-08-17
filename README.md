@@ -2,7 +2,7 @@
 This repo contains the official implementation for Local Spherical Harmonics Improve Skeleton-Based Hand Action Recognition. The paper is accepted to DAGM / GCPR 2023.
 
 ## Main Idea
-![LSH_Vis](https://github.com/KathPra/LSHR_LSHT/blob/main/LSH_Vis.pdf)
+![LSH_Vis](./LSH_Vis.svg)
 
 # Prerequisites
 We use the same prerequisites as CTR-GCN
