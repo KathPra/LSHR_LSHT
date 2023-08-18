@@ -1,0 +1,12 @@
+Please be aware that the models differ between the FPHA & NTU120 Dataset, as our method is only applied to hand joints.
+While all joints from the FPHA dataset are used, a subset of NTU120 joints is used.
+
+All model names are given as follows:
+action recognition model _ method _ l _ attribute _ further information (i/a)
+
+The options for each component are detailed below:
+action recognition model: gcnbl, ctrgcn
+method: LSHR (angular embeddings), LSHT (Spherical Transform)
+l: l parameter of Spherical Harmonics
+attribute: magnitude (mag), phase (phase), magphase (magnitude & phase), real (real), imaginary (imag), ri (real & imaginary)
+further information: BL (model with the same dimensions as name implies. Random numbers concatenated), excl (no Cartesian coordinates used), spherical coord (spherical coordinates used instead of LSHT/LSHR)
