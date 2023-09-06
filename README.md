@@ -47,10 +47,18 @@ python hand_action_acc.py --datasets ntu120/xsub --acc-dir work_dir/ntu120/csub/
 
 This repo is based on [CTR-GCN](https://github.com/Uason-Chen/CTR-GCN). The data processing is borrowed from [SGN](https://github.com/microsoft/SGN) and [HCN](https://github.com/huguyuehuhu/HCN-pytorch).
 
-Thanks to the original authors for their work!
+Thank you to the original authors for their work!
 
 ## Citation
-
+Please cite our paper if you find it useful:
+```
+@article{prasse2023local,
+  title={Local Spherical Harmonics Improve Skeleton-Based Hand Action Recognition},
+  author={Prasse, Katharina and Jung, Steffen and Zhou, Yuxuan and Keuper, Margret},
+  journal={arXiv preprint arXiv:2308.10557},
+  year={2023}
+}
+```
 
 # Contact
 For any questions, feel free to contact: `katharina.prasse@uni-siegen.de`
