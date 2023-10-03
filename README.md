@@ -15,6 +15,13 @@ Further dependencies:
 - Run `pip install -r requirements.txt`
 - Run `pip install -e torchlight`
 
+To install Torchlight
+```
+cd ../graph/torchlight; python setup.py install
+cd ../torchlight; python setup.py install
+pip install -e torchlight
+```
+
 ### Training
 
 - Select the config file depending on which dataset and modality you are interested in.
