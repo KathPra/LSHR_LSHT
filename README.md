@@ -15,12 +15,20 @@ Further dependencies:
 - Run `pip install -r requirements.txt`
 - Run `pip install -e torchlight`
 
-To install Torchlight
+To install Torchlight:
 ```
 cd ../graph/torchlight; python setup.py install
 cd ../torchlight; python setup.py install
 pip install -e torchlight
 ```
+
+### Data
+
+1) NTU RGB+D 120 Action Recognition Dataset: 
+https://github.com/shahroudy/NTURGB-D
+
+2) First-Person Hand Action Benchmark with RGB-D Videos and 3D Hand Pose Annotations:
+https://guiggh.github.io/publications/first-person-hands/
 
 ### Training
 
